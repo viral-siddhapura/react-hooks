@@ -17,6 +17,8 @@ const SimpleUseRefHook = React.lazy(() => import('../src/components/UseRef/Simpl
 const ComplexUseRefHook = React.lazy(() => import('../src/components/UseRef/ComplexUseRefHook'));
 const SimpleUseCallbackHook = React.lazy(() => import('../src/components/UseCallback/SimpleUseCallbackHook'));
 const ComplexUseCallbackHook = React.lazy(() => import('../src/components/UseCallback/ComplexUseCallbackHook'));
+const OlderReactAction = React.lazy(() => import('../src/components/Actions/OlderReactAction'));
+const NewReactAction = React.lazy(() => import('../src/components/Actions/NewReactAction'));
 
 const AppRouter = () => {
     return (
@@ -45,6 +47,9 @@ const AppRouter = () => {
                     
                     <Route path="/simpleUseRef" element={<SimpleUseRefHook/>} />
                     <Route path="/complexUseRef" element={<ComplexUseRefHook/>} />
+
+                    <Route path="/olderReactAction" element={<OlderReactAction/>} />
+                    <Route path="/newReactAction" element={<NewReactAction/>} />
                 </Routes>
             </Router>
         </>

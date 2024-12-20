@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles/landingPage.css";
-import { Link } from "react-router-dom";
 
 const LandingPage = () => {
 
@@ -86,6 +85,17 @@ const LandingPage = () => {
                 </div>
                 <div className="Column">
                     <a href="/complexUseRef">{complexText}</a>
+                </div>
+            </div>
+
+            {/* React Action Example */}
+            <div className="Row">
+                <div className="Column">Actions</div>
+                <div className="Column">
+                    <a href="/olderReactAction">{simpleText}</a>
+                </div>
+                <div className="Column">
+                    <a href="/newReactAction">{complexText}</a>
                 </div>
             </div>
         </div>
